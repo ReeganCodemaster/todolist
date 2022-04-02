@@ -1,0 +1,6 @@
+<h1>Todo's</h1>
+<ul>
+    <% @todos.each do |todo|%>
+        <%= link_to todo.title, todo %>
+    <% end %>
+</ul>
