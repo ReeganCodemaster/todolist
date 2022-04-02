@@ -1,4 +1,7 @@
 class TodosController < ApplicationController
+
+    http_basic_authenticate_with name:"Admin", password:"password00", except: [:index, :show]
+
     def index
         @todos = Todo.all
     end
