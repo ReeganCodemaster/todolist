@@ -1,15 +1,19 @@
 <h1><%= @todo.title%></h1>
 <p><%= @todo.body %></p>
 
-    <ul>
+<div>
+        <ul>
+            <li>
+                <%= link_to "Edit to-do", edit_todo_path%>
+            </li>
+        
         <li>
-            <%= link_to "Edit to-do", edit_todo_path%>
+            <%= link_to "Delete to-do", todo_path(@todo), data:{
+                turbo_method:"delete",
+                turbo_confirm:"Are you sure?"
+            }%>
         </li>
-    
-    <li>
-        <%= link_to "Delete to-do", todo_path(@todo), data:{
-            turbo_method:"delete",
-            turbo_confirm:"Are you sure?"
-        }%>
-    </li>
-</ul>
+    </ul>
+</div>
+
+<%= render @todo.comments %>

@@ -1,5 +1,4 @@
 class CommentsController < ApplicationController
-
     def update
         @todo = Todo.find(params[:id])
         @comment = @todo.comments.create()
