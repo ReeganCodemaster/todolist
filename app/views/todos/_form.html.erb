@@ -2,14 +2,32 @@
     <div>
         <h2><%= form.label :title %></h2>
         <%= form.text_field :title %>
+        <ul>
+            <% todos.errors.full_messages_for(:title) do |message| %>
+                <li>
+                    <% message %>
+                </li>
+        </ul>
     </div>
     <div>
         <h2><%= form.label :body %></h2>
         <%= form.text_area :body %>
+        <ul>
+            <% todos.errors.full_messages_for(:title) do |message| %>
+                <li>
+                    <% message %>
+                </li>
+        </ul>
     </div>
     <div>
         <h2><%= form.label :status %></h2>
-        <%= form.select :status, ['in-progress','done'], selected:'in-progress'%>  
+        <%= form.select :status, ['in-progress','done'], selected:'in-progress'%> 
+        <ul>
+            <% todos.errors.full_messages_for(:title) do |message| %>
+                <li>
+                    <% message %>
+                </li>
+        </ul> 
     </div>
     <div>
         <%= form.submit%>
