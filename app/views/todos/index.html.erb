@@ -1,7 +1,9 @@
 <h1>To-do's</h1>
 <ul>
     <% @todos.each do |todo|%>
+        <li>
         <%= link_to todo.title, todo %>
+        </li>
     <% end %>
 </ul>
 
