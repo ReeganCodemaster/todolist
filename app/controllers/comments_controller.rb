@@ -1,7 +1,7 @@
 class CommentsController < ApplicationController
-    def update
-        @todo = Todo.find(params[:id])
-        @comment = @todo.comments.create()
+    def create
+        @todo = Todo.find(params[:todo_id])
+        @comment = @todo.comments.create(comment_params)
 
         redirect_to todo_path(@todo)
     end
