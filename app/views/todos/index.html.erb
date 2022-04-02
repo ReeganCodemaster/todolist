@@ -1,6 +1,8 @@
-<h1>Todo's</h1>
+<h1>To-do's</h1>
 <ul>
     <% @todos.each do |todo|%>
         <%= link_to todo.title, todo %>
     <% end %>
 </ul>
+
+<%= link_to "Create a new to-do", new_todo_path%>

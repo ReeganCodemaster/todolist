@@ -1,4 +1,4 @@
-<%= form_with model: Todo do |form| %>
+<%= form_with model: todo do |form| %>
     <div>
         <h2><%= form.label :title %></h2>
         <%= form.text_field :title %>
@@ -9,7 +9,7 @@
     </div>
     <div>
         <h2><%= form.label :status %></h2>
-        <%= form.select :status, ['in-progress','done']. selected:'in-progress'%>  
+        <%= form.select :status, ['in-progress','done'], selected:'in-progress'%>  
     </div>
     <div>
         <%= form.submit%>
