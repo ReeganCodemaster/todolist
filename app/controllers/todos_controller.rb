@@ -14,7 +14,7 @@ class TodosController < ApplicationController
     def create
         @todo = Todo.new(todo_params)
         
-        if todo.save
+        if @todo.save
             redirect_to @todo
         else
             render :new , status: :unprocessable_entity
