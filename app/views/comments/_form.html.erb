@@ -1,0 +1,15 @@
+<div>
+    <%= form_with model: [@todo , @todo.comments.build] do |form|%>
+        <div>
+            <strong><%= form.label :person%></strong>
+            <%= form.text_field :person%>
+        </div>
+        <div>
+            <strong><%= form.label :body%></strong>
+            <%= form.text_field :body%>   
+        </div>
+        <div>
+            <%= form.submit %>
+        </div>
+    <% end %>
+</div>
