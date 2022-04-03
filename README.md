@@ -12,5 +12,5 @@ This project is a todo list web app with basic http authentication for selected 
     The only system dependency is `Rails 7.0.2.3`
 
 * ### Database creation
-    This project makes use of the default database configuration wich is sqlite(`3.31.1`)
+    This project makes use of the default database configuration which is sqlite(`3.31.1`)
 
