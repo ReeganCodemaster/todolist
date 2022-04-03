@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is a todo list web app with basic http authentication for selected tasks.The Authentication username is `Admin` and the password is `password00` 
 
-Things you may want to cover:
+<img src = 'todolist screenshot 1.jpg' alt='Ui sreenshot'><br/>
+<img src = 'todolist screenshot 2.jpg' alt='Ui sreenshot'>
 
-* Ruby version
+## Important environment information 
+* ### Ruby version
+    The ruby version  configured with this project is `ruby 2.7.2p137`
+* ### System dependencies
+    The only system dependency is `Rails 7.0.2.3`
 
-* System dependencies
+* ### Database creation
+    This project makes use of the default database configuration wich is sqlite(`3.31.1`)
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
