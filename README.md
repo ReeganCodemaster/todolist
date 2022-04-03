@@ -2,8 +2,8 @@
 
 This project is a todo list web app with basic http authentication for selected tasks.The Authentication username is `Admin` and the password is `password00` 
 
-<img src = 'todolist screenshot 1.jpg' alt='Ui sreenshot'><br/>
-<img src = 'todolist screenshot 2.jpg' alt='Ui sreenshot'>
+<img src = 'todolist screenshot 1.png' alt='Ui sreenshot'><br/>
+<img src = 'todolist screenshot 2.png' alt='Ui sreenshot'>
 
 ## Important environment information 
 * ### Ruby version
